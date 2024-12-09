@@ -43,6 +43,6 @@ public class ClientDemo {
         session.close();
         factory.close();
 
-        System.out.println("Records inserted successfully!");
+        System.out.println("All Records inserted successfully!");
     }
 }
