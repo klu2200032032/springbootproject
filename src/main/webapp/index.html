@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management</title>
+</head>
+<body>
+    <h1>Student Management</h1>
+    <form action="AddData" method="post">
+        <h3>Insert Student</h3>
+        
+        Name: <input type="text" name="sname" required><br><br>
+        Gender: <input type="text" name="gender" required><br><br>
+        Department: <input type="text" name="department" required><br><br>
+        Program: <input type="text" name="program" required><br><br>
+        DOB: <input type="date" name="dob" required><br><br>
+        Contact: <input type="text" name="contactNumber" required pattern="[0-9]{10}" title="Please enter a 10-digit number"><br><br>
+        Graduation Status: <input type="text" name="graduationStatus" required><br><br>
+        CGPA: <input type="number" name="cgpa" step="0.01" required><br><br>
+        Backlogs: <input type="number" name="backlogs" required><br><br>
+        
+        <input type="submit" value="Insert">
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.model.Student" table="students">
+        <id name="sid" column="sid" type="int">
+            <generator class="native"/>
+        </id>
+        <property name="sname" column="sname" type="string"/>
+        <property name="gender" column="gender" type="string"/>
+        <property name="department" column="department" type="string"/>
+        <property name="program" column="program" type="string"/>
+        <property name="dob" column="dob" type="date"/>
+        <property name="contactNumber" column="contact_number" type="string"/>
+        <property name="graduationStatus" column="graduation_status" type="string"/>
+        <property name="cgpa" column="cgpa" type="float"/>
+        <property name="noOfBacklogs" column="no_of_backlogs" type="int"/>
+    </class>
+</hibernate-mapping>
